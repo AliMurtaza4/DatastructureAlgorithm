@@ -1,0 +1,19 @@
+//Time complexity : O(n^2)
+//Space complexity : O(1) 
+
+#include<iostream>
+using namespace std;
+int main(){
+    int targetSum = 10;
+    bool breakcondition ;
+    int arr[8]={3,5,-4,8,11,1,-1,6};
+
+    for(int i=0;i<=7;i++){
+        for(int y=1+i;y<=7;y++){
+            if((arr[i]+arr[y])==targetSum){
+                cout<<arr[i]<<","<<arr[y];
+            }
+         }
+    }
+}
+
